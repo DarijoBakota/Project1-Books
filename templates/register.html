@@ -4,7 +4,22 @@
 register
 {% endblock %}
 
-{% block body %}
-<p>this is register aaaaaaaaaaa</p>
+{% block body%}
+<p>this is register</p>
+<form action="/register" method="post" class="container">
+  <div class="form-group">
+      <input autocomplete="off" autofocus class="form-control" name="name" placeholder="Username" type="text"/>
+    </div>
 
-{% endblock %}
+    <div class="form-group">
+      <input class="form-control" name="password" placeholder="Password" type="password"/>
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" name="passwordConfirm" placeholder="Confirm your password" type="password"/>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Register</button>
+
+</form>
+{%endblock%}
