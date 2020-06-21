@@ -44,7 +44,7 @@ def register():
         elif not request.form.get("passwordConfirm"):
             return render_template("sorry.html", error="Password confirmation field not filled in")
 
-        
+
 
         #Get all fields from the form
         name = request.form.get("name")
